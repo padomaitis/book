@@ -2,7 +2,7 @@
 
 		@foreach ($books as $book)
 		
-			<div class='col-sm-3 col-lg-3 col-md-3'>
+			<div class='col-sm-3 col-lg-3 col-md-3' style="clear:both">
 				<div class='thumbnail'>
 					<img src="{{URL::asset($book->ImgSrc)}}" alt='' />
 					<div class='caption'>
