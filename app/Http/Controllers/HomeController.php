@@ -33,7 +33,7 @@ class HomeController extends Controller{
 	
 		public function getBookDetails($id)
 	{
-		$book = Book::with('genre')->where('BookId',$id)->first();
+		$book = Book::with('genre')->where('id',$id)->first();
 	
 		return view('details',['book'=>$book]);
 	}
