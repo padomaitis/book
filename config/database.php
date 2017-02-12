@@ -1,12 +1,12 @@
 <?php
-
-return [
-$url = parse_url(getenv("DATABASE_URL"));
+$url = parse_url(env("DATABASE_URL", "postgres://jhlxgejrvmbens:02335254e78f532538246e714146ce1d3702e1ed6d45be31fc83a5c4eae3797a@ec2-54-225-66-44.compute-1.amazonaws.com:5432/d6pnp2lh2h21ha"));
 
 $host = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $database = substr($url["path"], 1);
+return [
+
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
