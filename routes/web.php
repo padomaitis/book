@@ -19,11 +19,11 @@ Route::get('/{id}',[
 'uses'=>'HomeController@getBookDetails',
 'as'=>'home.details',
 ]);
-Route::get('create',[
+Route::get('/',[
 'uses'=>'CreateController@index',
-'as'=>'getForm',
+'as'=>'create.getForm',
 ]);
-Route::post('create',[
+Route::post('/',[
 'uses'=>'CreateController@create',
-'as'=>'createBook',
+'as'=>'create.createBook',
 ]);
