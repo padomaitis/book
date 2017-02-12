@@ -14,8 +14,8 @@ class HomeController extends Controller{
 	public function getBookList(){
 	 
 		$genre = new Genre();
-		$genre->id=6;
-		$genre->GenreName="Melodrama";
+		$genre->id=7;
+		$genre->GenreName="Istorija";
 		$genre->save();
 		$books = Book::with('genre')->paginate(1);
 	
