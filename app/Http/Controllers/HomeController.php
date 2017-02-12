@@ -12,7 +12,11 @@ use Illuminate\Routing\Controller as BaseController;
 class HomeController extends Controller{
 	
 	public function getBookList(){
-	
+	 
+		$genre = new Genre();
+		$genre->id=6;
+		$genre->GenreName="Melodrama";
+		$genre->save();
 		$books = Book::with('genre')->paginate(1);
 	
 		return view('welcome',['books'=>$books]);
