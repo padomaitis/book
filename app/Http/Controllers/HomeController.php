@@ -13,14 +13,14 @@ class HomeController extends Controller{
 	
 	public function getBookList(){
 		$newGenre = new Genre();
-		$newGenre->id = 2;
+		$newGenre->id = 3;
 		$newGenre->GenreName = "Drama";
 		$newGenre->save();
 		$newbook = new Book();
-		$newbook->BookId=2;
+		$newbook->BookId=3;
 		$newbook->Name="Mano";
 		$newbook->ShortDesc="Mano knyga";
-		$newbook->genre_id = 2;
+		$newbook->genre_id = 3;
 		$newbook->save();
 		$books = Book::with('genre')->paginate(1);
 	
