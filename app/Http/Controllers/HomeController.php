@@ -14,13 +14,13 @@ class HomeController extends Controller{
 	public function getBookList(){
 	 
 		$book = new Book();
-		$book->id=13;
-		$book->Name="Bemm";
-		$book->ShortDesc="Bem";
-		$book->LongDesc="Benas apie save";
+		$book->id=14;
+		$book->Name="Bond";
+		$book->ShortDesc="Bdn";
+		$book->LongDesc="Bondas apie save";
 		$book->ImgSrc="img/dramabook.png";
-		$book->Author="Ben";
-		$book->year=1988;
+		$book->Author="Bondass";
+		$book->year=1978;
 		$book->genre_id=6;
 		$book->save();
 		$books = Book::with('genre')->paginate(5);
