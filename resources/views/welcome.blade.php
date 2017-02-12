@@ -2,7 +2,7 @@
 
 		@foreach ($books as $book)
 		
-			<div class='col-sm-3 col-lg-3 col-md-3' style="clear:both">
+			<div class='col-sm-3 col-lg-3 col-md-3'>
 				<div class='thumbnail'>
 					<img src="{{URL::asset($book->ImgSrc)}}" alt='' />
 					<div class='caption'>
@@ -17,7 +17,9 @@
 					</div>
 				</div>
 			</div>
+			
 		@endforeach
+		<div style="clear:both"></div>
 		{{$books->links()}}
 @include('include.footer')
 
