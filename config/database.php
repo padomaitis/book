@@ -47,7 +47,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'host' => 'ec2-54-225-66-44.compute-1.amazonaws.com',
-            'port' => '5432'),
+            'port' => '5432',
             'database' => 'd6r3824h08t9tr',
             'username' => 'ioalppwlqlmzqt',
             'password' => 'f62a05b310030fbfd900119ea77bea342a53721eaacfa7fe42715b34c757d9c3',
