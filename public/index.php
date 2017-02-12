@@ -18,7 +18,7 @@
 | loading any of our classes later on. It feels nice to relax.
 |
 */
-
+                     /*
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*
@@ -32,7 +32,7 @@ require __DIR__.'/../bootstrap/autoload.php';
 | the responses back to the browser and delight our users.
 |
 */
-
+/*
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
 /*
@@ -46,7 +46,7 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 | and wonderful application we have prepared for them.
 |
 */
-
+/*
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(
@@ -56,3 +56,5 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+*/
+echo "Hello world" ?>
