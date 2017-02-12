@@ -29,7 +29,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Homees</a></li>
-            <li><a href="{{route('create.getForm')}}">About</a></li>
+            <li><a href="">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
