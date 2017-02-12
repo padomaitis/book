@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[
+'uses'=>'HomeController@getBookList',
+]);
+
+Route::get('/{id}',[
+'uses'=>'HomeController@getBookDetails',
+'as'=>'home.details',
+]);
