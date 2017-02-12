@@ -6,7 +6,7 @@
 				<div class='thumbnail'>
 					<img src="{{URL::asset($book->ImgSrc)}}" alt='' />
 					<div class='caption'>
-						<h3 class='pull-right'>{{$book->Year}}</h3>
+						<h3 class='pull-right'>{{$book->year}}</h3>
 						<h3>
 							<a href="{{route('home.details',['id'=>$book->id])}}">{{$book->Name}}</a>
 						</h3>
