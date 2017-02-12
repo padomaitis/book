@@ -1,5 +1,5 @@
 @include('include.header')
-{{Form::open(array('route' => 'contact_store', 'class' => 'form')) }}
+{{Form::open(array('route' => 'contact_store', 'class' => 'Book')) }}
 <div class="form-group">
     {!! Form::label('Your Name') !!}
     {!! Form::text('name', null, 
