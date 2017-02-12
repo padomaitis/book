@@ -17,7 +17,7 @@ class HomeController extends Controller{
 		$newGenre->GenreName = "Drama";
 		$newGenre->save();
 		$newbook = new Book();
-		$newbook->BookId=3;
+		$newbook->id=3;
 		$newbook->Name="Mano";
 		$newbook->ShortDesc="Mano knyga";
 		$newbook->genre_id = 3;
