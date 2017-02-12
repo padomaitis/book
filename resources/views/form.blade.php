@@ -1,5 +1,5 @@
 @include('include.header')
-{{Form::open(array('route' => 'create.createBook', 'class' => 'Book')) }}
+{{Form::open(array('route' => 'create.createBook')) }}
 <div class="form-group">
     {!! Form::label('Your Name') !!}
     {!! Form::text('name', null, 
