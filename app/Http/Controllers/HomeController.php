@@ -11,7 +11,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 class HomeController extends Controller{
 	
-	public function getBookList()
+	public function getBookList(){
 		$newGenre = new Genre();
 		$newGenre->GenreName = "Drama";
 		$newGenre->save();
